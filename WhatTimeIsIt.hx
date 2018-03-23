@@ -1,9 +1,12 @@
+class WhatTimeIsIt {
+	// This is a comment
 
+	// the date property (See Haxe documentation, 4.2) is unnecessary
+	// but we are leaving it in.
+    public var date(default, null):Date;
 
-class Main {
-	public var date(default, null):Whattimeisit;
-	static public function main() {
-		var today = Date.now();
-			trace(today);
-	}
+    static public function main() {
+        var today = Date.now();
+        trace("Today's date is: " + today);
+    }
 }
